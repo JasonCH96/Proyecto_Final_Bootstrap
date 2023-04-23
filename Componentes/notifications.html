@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Castro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="../imagenes/code-slash.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"> -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section class="NotificationPage aling-items-stretch text-center">
+        <article class="notificationPage d-flex flex-column justify-content-center align-items-center">
+            <h1>Badge</h1>
+            <p>El componente Badge de Bootstrap se utiliza para mostrar pequeñas etiquetas de texto con información adicional en un elemento de la interfaz de usuario. Los Badges de Bootstrap son pequeños y generalmente se usan para mostrar información como notificaciones, conteos de elementos o estados.
+
+                Los Badges de Bootstrap se pueden aplicar a muchos elementos de la interfaz de usuario, como botones, enlaces, iconos y otros elementos HTML.</p>
+        </article>
+    </section>
+        <section class="headingsN">
+            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+            <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+            <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+            <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+            <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+            <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+        </section>
+        <section class="positionedN">
+            <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+        </section>
+    <section class="NotificationPage aling-items-stretch text-center">
+        <article class="notificationPage d-flex flex-column justify-content-center align-items-center">
+            <h1>Spinner</h1>
+            <p> El componente Spinners de Bootstrap se utiliza para mostrar un indicador de carga o progreso en una página web. Los Spinners de Bootstrap son animaciones simples que indican que una tarea está en progreso y que el usuario debe esperar antes de continuar.
+
+                Bootstrap ofrece dos tipos de Spinners: el tipo "border" que es un círculo con borde y el tipo "growing" que es un círculo lleno que crece y disminuye de tamaño. Los Spinners de Bootstrap también se pueden personalizar con diferentes tamaños, colores y estilos.</p>
+        </article>
+    </section>
+    <section class="spinners d-flex flex-row">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </section>
+    <section class="spinerB d-flex flex-row">
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+    </section>    
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

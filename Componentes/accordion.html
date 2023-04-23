@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Castro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="../imagenes/code-slash.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"> -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <section class="accordionPage aling-items-stretch text-center">
+    <article class="accordionPage d-flex flex-column justify-content-center align-items-center">
+        <h1>Accordion</h1>
+        <p>El componente "accordion" de Bootstrap es una forma interactiva de mostrar y ocultar contenido en una página web. Al hacer clic en un elemento, se expande o contrae para mostrar u ocultar información. Es útil para organizar información en secciones y presentarla de forma compacta y fácil de navegar. Bootstrap proporciona estilos y funcionalidad predefinidos para agregarlo rápidamente a un sitio web.</p>
+    </article>
+  </section>
+    <article class="accordion col-6 mx-auto" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>Este es el cuerpo del acordeón del primer elemento.</strong> Está oculto por defecto, hasta que el complemento de colapso agrega las clases apropiadas que utilizamos para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la muestra y ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de estos aspectos con CSS personalizado o sobrescribiendo nuestras variables predeterminadas. También vale la pena señalar que prácticamente cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Este es el cuerpo del acordeón del segundo elemento.</strong> Está oculto por defecto, hasta que el complemento de colapso agrega las clases apropiadas que utilizamos para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la muestra y ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de estos aspectos con CSS personalizado o sobrescribiendo nuestras variables predeterminadas. También vale la pena señalar que prácticamente cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Este es el cuerpo del acordeón del tercer elemento.</strong> Está oculto por defecto, hasta que el complemento de colapso agrega las clases apropiadas que utilizamos para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la muestra y ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de estos aspectos con CSS personalizado o sobrescribiendo nuestras variables predeterminadas. También vale la pena señalar que prácticamente cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+            </div>
+          </div>
+        </div>
+      </article>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

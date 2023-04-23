@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Castro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Bootstrap</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/code-slash.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <article class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <article class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="imagenes/code-slash.svg" width="50" alt="Logo de la página web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#componentes">Bootstrap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios-carrusel">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </article>
+        </article>
+    </nav>
+    <!-- Dev Info -->
+    <section class="dev aling-items-stretch">
+        <article class="dev-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="dev-imagen-desarrollador rounded-circle" src="imagenes/code-slash.svg" alt="Foto de Jason">
+            <h1>Jason Castro, Full Stack Web Developer</h1>
+            <h2>Desarollo Web</h2>
+        </article>
+        <article class="dev-secundario">
+            <img class="dev-secundario-imagen img-fluid" src="./imagenes/proyecto4.png" alt="Monitor, laptop y logos de HTML, CSS y JavaScript">
+        </article>
+    </section>
+    <!-- About me -->
+    <section class="about-me seccion-oscura">
+        <article class="container">
+            <h2 class="title-section" id="sobre-mi">Sobre mi</h2>
+            <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula nulla, efficitur vitae neque sed, mattis mollis lorem. Duis facilisis, diam id iaculis rutrum, lacus ex faucibus turpis, a viverra purus orci eu magna. Aenean vehicula augue ullamcorper velit viverra, ut sodales justo dictum. Pellentesque vel arcu vitae nibh vestibulum pretium. Maecenas fringilla risus metus, faucibus fermentum velit consequat ac. Phasellus condimentum augue sit amet nisl vulputate, ultricies placerat risus varius. Integer ac turpis pulvinar.</p>
+        </article>
+    </section>
+    <!-- Bootstrap Components -->
+    <section id="componentes" class="componentes-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Componentes de Bootstrap</h2>
+      <h3 class="seccion-descripcion">Estos son los componentes de Bootstrap detallados</h3>
+      <!-- Galeria de Componentes -->
+      <article class="container text-center componentes-contenedor">
+        <article class="row">
+          <!-- Accordions -->
+          <a href="./Componentes/accordion.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/accordion.png" alt="Accordion">
+              <article class="overlay">
+                <p>Accordion</p>
+              </article>
+            </article>
+          </a>
+          <!-- Alerts -->
+          <a href="./Componentes/alerts.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/alerts.png" alt="Alerts">
+              <article class="overlay">
+                <p>Alerts</p>
+              </article>
+            </article>
+          </a>
+          <!-- Notifications -->
+          <a href="./Componentes/notifications.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/notifications.png" alt="Notifications">
+              <article class="overlay">
+                <p>Notifications</p>
+              </article>
+            </article>
+          </a>
+          <!-- Information -->
+          <a href="./Componentes/information.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/information.png" alt="Information">
+              <article class="overlay">
+                <p>Information</p>
+              </article>
+            </article>
+          </a>
+          <!-- Buttons -->
+          <a href="./Componentes/buttons.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/buttons.png" alt="Buttons">
+              <article class="overlay">
+                <p>Buttons</p>
+              </article>
+            </article>
+          </a>
+          <!-- Card -->
+          <a href="./Componentes/card.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/card.png" alt="Card">
+              <article class="overlay">
+                <p>Card</p>
+              </article>
+            </article>
+          </a>
+          <!-- Carousel -->
+          <a href="./Componentes/carrousel.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/carousel.png" alt="Carrousel">
+              <article class="overlay">
+                <p>Carousel</p>
+              </article>
+            </article>
+          </a>
+          <!-- Collapse -->
+          <a href="./Componentes/collapse.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/collapse.png" alt="Collapse">
+              <article class="overlay">
+                <p>Collapse</p>
+              </article>
+            </article>
+          </a>
+          <!-- Dropdowns -->
+          <a href="./Componentes/dropdowns.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/dropdowns.png" alt="Dropdowns">
+              <article class="overlay">
+                <p>Dropdowns</p>
+              </article>
+            </article>
+          </a>
+          <!-- List Groups -->
+          <a href="./Componentes/list_group.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/listgroups.png" alt="List Groups">
+              <article class="overlay">
+                <p>List Groups</p>
+              </article>
+            </article>
+          </a>
+          <!-- Modal -->
+          <a href="./Componentes/modal.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/modal.png" alt="Modal">
+              <article class="overlay">
+                <p>Modal</p>
+              </article>
+            </article>
+          </a>
+          <!-- Nav & Tabs -->
+          <a href="./Componentes/nav_tabs.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/navtabs.png" alt="Navs & Tabs">
+              <article class="overlay">
+                <p>Navs & Tabs</p>
+              </article>
+            </article>
+          </a>
+          <!-- Navbar -->
+          <a href="./Componentes/navbar.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/navbar.png" alt="Navbar">
+              <article class="overlay">
+                <p>Navbar</p>
+              </article>
+            </article>
+          </a>
+          <!-- Offcanvas -->
+          <a href="./Componentes/offcanvas.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/offcanvas.png" alt="Offcanvas">
+              <article class="overlay">
+                <p>Offcanvas</p>
+              </article>
+            </article>
+          </a>
+          <!-- Placeholders -->
+          <a href="./Componentes/placeholders.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/placeholders.png" alt="Placeholders">
+              <article class="overlay">
+                <p>Placeholders</p>
+              </article>
+            </article>
+          </a>
+          <!-- Popovers -->
+          <a href="./Componentes/popovers.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/popover.png" alt="Popovers">
+              <article class="overlay">
+                <p>Popovers</p>
+              </article>
+            </article>
+          </a>
+          <!-- Progress -->
+          <a href="./Componentes/progress.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/progress.png" alt="Progress">
+              <article class="overlay">
+                <p>Progress</p>
+              </article>
+            </article>
+          </a>
+          <!-- Scrollspy -->
+          <a href="./Componentes/scrollspy.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/scrollspy.png" alt="Scrollspy">
+              <article class="overlay">
+                <p>Scrollspy</p>
+              </article>
+            </article>
+          </a>
+          <!-- Toasts -->
+          <a href="./Componentes/toasts.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/toasts.png" alt="Toasts">
+              <article class="overlay">
+                <p>Toasts</p>
+                </article>
+              </article>
+            </a>
+          <!-- Tooltips -->
+          <a href="./Componentes/tooltips.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/tooltips.png" alt="Tooltips">
+              <article class="overlay">
+                <p>Tooltips</p>
+              </article>
+            </article>
+          </a>
+          <!-- Tables -->
+          <a href="./Componentes/tables.html" class="col-12 col-md-6 col-lg-4">
+            <article class="componente">
+              <img src="imagenes/tables.png" alt="Tables">
+              <article class="overlay">
+                <p>Tables</p>
+              </article>
+            </article>
+          </a>
+          <!-- Forms -->
+          <a href="./Componentes/forms.html" class="col-12 col-md-6 col-lg-4 mx-auto">
+            <article class="componente">
+              <img src="imagenes/forms.png" alt="Forms">
+              <article class="overlay">
+                <p>Forms</p>
+                </article>
+              </article>
+            </a>
+          </article>
+      </article>
+    </article>
+    </section>
+    <!-- Testimonios -->
+    <section testimonios seccion-clara>
+      <h2 class="title-section">Testimonios</h2>
+      <h3 class="description-section">Algunos testimonios de mis clientes</h3>
+      <!-- Carrusel -->
+      <article id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <article class="carousel-inner">
+          <article class="carousel-item active">
+            <article class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/perro 1.jpg" alt="Cliente 1">
+              <p class="testimonio-texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat."</p>
+              <article class="testimonio-info">
+                <p class="cliente">Perro 1</p>
+                <p class="cargo">Gerente de proyectos en Intel</p>
+              </article>
+            </article>
+          </article>
+          <article class="carousel-item">
+            <article class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/perro 2.jpg" alt="Cliente 2">
+              <p class="testimonio-texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat."</p>
+              <article class="testimonio-info">
+                <p class="cliente">Perro 2</p>
+                <p class="cargo">Dueño de Google</p>
+              </article>
+            </article>
+          </article>
+          <article class="carousel-item">
+            <article class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/pero3.jpg" alt="Cliente 3">
+              <p class="testimonio-texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat."</p>
+              <article class="testimonio-info">
+                <p class="cliente">Perro 3</p>
+                <p class="cargo">Gerente de Microsoft</p>
+              </article>
+            </article>
+          </article>
+        </article>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </article>
+    </section>
+    <!-- Contacto -->
+    <section class="contacto seccion-oscura" id="contacto">
+      <article class="container">
+        <article class="container text-center rectangulo d-flex justify-content-evenly">
+          <article class="row">
+            <article class="col-12 col-md-4 title-section">
+              Hablemos!
+            </article>
+            <article class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto de desarrollo web!
+            </article>
+            <article class="col-12 col-md-4">
+              <a href="mailto:jasoncastroh@gmai.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-at"></i>
+                </button>
+              </a>
+            </article>
+          </article>
+        </article>
+      </article>
+    </section>
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="./imagenes/code-slash.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Enlaces de contacto</p>
+      <section class="iconos-redes-sociales d-flex flex-row align-items-center justify-content-center">
+        <a href="https://wa.me/50664438531" target="_blank" rel="noopener noreferrer">
+          <img src="./imagenes/whatsapp.svg" alt="icono-whatsapp">
+        </a>
+        <a href="https://github.com/JasonCH96" target="_blank" rel="noopener noreferrer">
+          <img src="./imagenes/github.svg" alt="icono-Git-Hub">
+        </a>
+        <a href="https://www.linkedin.com/in/jason-castro-herrera-96a5761b0/" target="_blank" rel="noopener noreferrer">
+          <img src="./imagenes/linkedin.svg" alt="icono-linkedin">
+        </a>
+        <a href="mailto:jasoncastroh@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="./imagenes/envelope-at.svg" alt="icono-envelope">
+        </a>
+      </section>
+    </footer>
+<script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

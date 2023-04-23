@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Castro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="../imagenes/code-slash.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"> -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section class="InformationPage aling-items-stretch text-center">
+        <article class="informationPage d-flex flex-column justify-content-center align-items-center">
+            <h1>Offcanvas</h1>
+            <p> El componente Navbar de Bootstrap te permite crear una barra de navegación en la parte superior de tu
+                sitio web.</p>
+        </article>
+    </section>
+    <section class="offcanvasInfo">
+        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
+
+        <div class="alert alert-info d-none d-lg-block">Cambie el tamaño de su navegador para mostrar la opción responsiva de offcanvas.
+        </div>
+
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+        </div>
+    </section>
+    <section class="offcanvasInfo">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop">
+            Toggle static offcanvas
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    I will not close if you click outside of me.
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
